@@ -86,7 +86,7 @@ const Router = ({ createReducer, sceneStyle, scenes, uriPrefix, navigator, getSc
     // set external state and dispatch
     navigationStore.setState(state);
     navigationStore.dispatch = dispatch;
-    return <AppNavigator navigation={addNavigationHelpers({ dispatch, state })} uriPrefix={uriPrefix} />;
+    return <AppNavigator navigation={addNavigationHelpers({ dispatch, state })} />;
   }
   return <App {...props} onDeepLink={onDeepLink} navigator={AppNavigator} uriPrefix={uriPrefix} />;
 };
